@@ -12,5 +12,17 @@ body {
 .hero-image {
     height: 30em;
     width: 100%;
-    background: url("/assets/images/hogwarts-houses.jpg") no-repeat bottom / cover;
+    background: url("/assets/images/hogwarts-houses.jpg") no-repeat scroll center;
+    background-size: contain;
+    background-color: #1a1a1a;
+}
+
+.wand {
+    color: #ffd700;
+    display: inline-block;
+    line-height: 1;
+}
+
+.main-section {
+    font-size: 1.5em;
 }
