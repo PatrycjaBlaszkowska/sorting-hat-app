@@ -117,6 +117,10 @@ function askQuestion(quizData) {
     
 };
 
+function checkAnswer (answer) {
+
+};
+
 // Function to dynamically generate a number of the 
 // current question
 
@@ -129,3 +133,4 @@ function updateQuestionNumber() {
 //Function calls
 
 askQuestion(quizData);
+updateQuestionNumber();
