@@ -3,7 +3,17 @@
 const question = document.getElementById("question");
 const answers = document.getElementById("answer");
 const number = document.getElementById("number");
+
 let currentNumber = 0;
+
+let questionNumber = 0;
+
+let scores = {
+    Gryffindor: 0,
+    Hufflepuff: 0,
+    Ravenclaw: 0,
+    Slytherin: 0
+};
 
 // Questions and answers objects
 
@@ -102,35 +112,48 @@ const quizData = [
 
 // Function to pick a random question
 
+
+
 function askQuestion(quizData) {
-    let i = Math.floor(Math.random() * quizData.length);
-    const randomQuestion = quizData[i];
-    question.innerText = randomQuestion.question; 
-    
+
+    const currentQuestion = quizData[currentNumber]
+    question.innerHTML = currentQuestion.question
+
     answers.innerHTML = "";
-    randomQuestion.answers.forEach(answer => {
+
+    currentQuestion.answers.forEach(answer => {
+
         const questionAnswers = document.createElement("button");
+
         questionAnswers.innerText = answer.text;
+
         questionAnswers.classList.add("btn", "btn-secondary", "col-12", "mt-2", "mb-2");
+
         answers.appendChild(questionAnswers);
-    });   
-    
+
+    });  
+
+    if (currentNumber >= quizData.length) {
+        quizResults();
+    } else {
+        currentNumber++; 
+    }
+   
 };
 
-function checkAnswer (answer) {
-
+function checkAnswer(house) {
+    scores[house]++
 };
 
-// Function to dynamically generate a number of the 
-// current question
 
-function updateQuestionNumber() {
-    currentNumber += 1; 
-    number.innerText = currentNumber;
-};
+function updateQuestionNumber(number) {
+    questionNumber ++;
+    number.innerHTML = questionNumber;
+}
 
 
 //Function calls
 
 askQuestion(quizData);
-updateQuestionNumber();
+checkAnswer(house);
+updateQuestionNumber(number);
