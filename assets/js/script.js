@@ -1,7 +1,9 @@
 // Declaring main variables
 
 const question = document.getElementById("question");
-const answer = document.getElementById("answer");
+const answers = document.getElementById("answer");
+const number = document.getElementById("number");
+let currentNumber = 0;
 
 // Questions and answers objects
 
@@ -103,5 +105,27 @@ const quizData = [
 function askQuestion(quizData) {
     let i = Math.floor(Math.random() * quizData.length);
     const randomQuestion = quizData[i];
-    return randomQuestion;    
-}
+    question.innerText = randomQuestion.question; 
+    
+    answers.innerHTML = "";
+    randomQuestion.answers.forEach(answer => {
+        const questionAnswers = document.createElement("button");
+        questionAnswers.innerText = answer.text;
+        questionAnswers.classList.add("btn", "btn-secondary", "col-12", "mt-2", "mb-2");
+        answers.appendChild(questionAnswers);
+    });   
+    
+};
+
+// Function to dynamically generate a number of the 
+// current question
+
+function updateQuestionNumber() {
+    currentNumber += 1; 
+    number.innerText = currentNumber;
+};
+
+
+//Function calls
+
+askQuestion(quizData);
