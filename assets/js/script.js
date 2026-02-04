@@ -6,8 +6,6 @@ const number = document.getElementById("number");
 
 let currentNumber = 0;
 
-let questionNumber = 0;
-
 let scores = {
     Gryffindor: 0,
     Hufflepuff: 0,
@@ -112,8 +110,6 @@ const quizData = [
 
 // Function to pick a random question
 
-
-
 function askQuestion(quizData) {
 
     const currentQuestion = quizData[currentNumber]
@@ -131,29 +127,41 @@ function askQuestion(quizData) {
 
         answers.appendChild(questionAnswers);
 
-    });  
+        questionAnswers.onclick = () => checkAnswer(answer.house);
 
-    if (currentNumber >= quizData.length) {
-        quizResults();
-    } else {
-        currentNumber++; 
-    }
+    });  
    
 };
 
+
+// Function to check an answer 
+
 function checkAnswer(house) {
+
     scores[house]++
+
+    if (currentNumber >= quizData.length - 1) {
+        quizResults();
+    } else {
+        currentNumber++; 
+        updateQuestionNumber(number);
+        askQuestion(quizData)
+    };
 };
 
 
+// Function to update the question number
+
 function updateQuestionNumber(number) {
-    questionNumber ++;
-    number.innerHTML = questionNumber;
+    number.innerHTML = currentNumber + 1;
 }
 
 
+function quizResults() {
+    
+}
+
 //Function calls
 
+updateQuestionNumber(number); 
 askQuestion(quizData);
-checkAnswer(house);
-updateQuestionNumber(number);
