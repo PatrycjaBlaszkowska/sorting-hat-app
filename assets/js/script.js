@@ -152,7 +152,9 @@ function checkAnswer(house) {
 // Function to update the question number
 
 function updateQuestionNumber(number) {
-    number.innerHTML = currentNumber + 1;
+    if (number) {
+        number.innerHTML = currentNumber + 1;
+    }
 }
 
 
@@ -166,7 +168,6 @@ function quizResults(scores) {
     localStorage.setItem("winner", winner);
     window.location.assign("results.html");
 }
-
 
 //Function calls
 
