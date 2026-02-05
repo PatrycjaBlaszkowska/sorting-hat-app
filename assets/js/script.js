@@ -108,7 +108,7 @@ const quizData = [
     }
 ];
 
-// Function to pick a random question
+// Function to ask user a question
 
 function askQuestion(quizData) {
 
@@ -131,23 +131,22 @@ function askQuestion(quizData) {
 
     });  
    
-};
+}
 
 
-// Function to check an answer 
+// Function to check an answer and add points
 
 function checkAnswer(house) {
-
-    scores[house]++
+    scores[house]++;
 
     if (currentNumber >= quizData.length - 1) {
-        quizResults();
+        quizResults(scores);
     } else {
         currentNumber++; 
         updateQuestionNumber(number);
-        askQuestion(quizData)
-    };
-};
+        askQuestion(quizData);
+    }
+}
 
 
 // Function to update the question number
@@ -157,9 +156,17 @@ function updateQuestionNumber(number) {
 }
 
 
-function quizResults() {
+// Function to find a winner and re-direct user to the results page
+
+function quizResults(scores) {
+    const winner = Object.entries(scores).reduce((max, entry) => {
+        return entry[1] > max.value ? { key: entry[0], value: entry[1] } : max;
+    }, { key: null, value: -Infinity }).key;
     
+    localStorage.setItem("winner", winner);
+    window.location.assign("results.html");
 }
+
 
 //Function calls
 
