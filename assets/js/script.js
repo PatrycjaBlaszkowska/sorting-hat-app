@@ -1,4 +1,4 @@
-// Declaring main variables
+// Declaring global variables
 
 const question = document.getElementById("question");
 const answers = document.getElementById("answer");
