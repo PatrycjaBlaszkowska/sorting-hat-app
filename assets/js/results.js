@@ -33,7 +33,6 @@ function displayWinner(result, mottos) {
         motto.innerHTML = mottos[winnerName];
 
         houseBanners.src = houseImages[winnerName];
-        houseBanners.style.display = "block"; 
         houseBanners.alt = winnerName + " banner";
 
     } else {

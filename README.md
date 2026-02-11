@@ -30,6 +30,10 @@ User can take a quiz inculuding 10 questions and see which house he/she belongs 
 
 [house banners](https://www.amazon.co.uk/)
 
+### Gifs:
+
+[Loading gif](https://tenor.com/en-GB/view/load-loading-april-fools-gif-5435835)
+
 ### Fonts:
 
 ["Lumos" font](https://www.dafont.com/lumos.font)
