@@ -1,6 +1,6 @@
 # Sorting Hat 
 
-![Responsive view of a Sorting Hat](https://github.com/PatrycjaBlaszkowska/sorting-hat-app/tree/main/docs/introduction-image.png)
+![Responsive view of a Sorting Hat](https://github.com/PatrycjaBlaszkowska/sorting-hat-app/blob/main/docs/images/introduction-image.png)
 
 [Live link here](https://patrycjablaszkowska.github.io/sorting-hat-app/)
 
