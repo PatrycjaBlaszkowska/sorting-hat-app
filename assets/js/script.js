@@ -108,16 +108,26 @@ const quizData = [
     }
 ];
 
+
 // Function to ask user a question
+
 
 function askQuestion(quizData) {
 
-    const currentQuestion = quizData[currentNumber]
+    const currentQuestion = quizData[currentNumber];
+    
     question.innerHTML = currentQuestion.question
 
     answers.innerHTML = "";
 
-    currentQuestion.answers.forEach(answer => {
+    const shuffledAnswers = [...currentQuestion.answers];
+
+    for (let i = shuffledAnswers.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledAnswers[i], shuffledAnswers[j]] = [shuffledAnswers[j], shuffledAnswers[i]];
+    }
+
+    shuffledAnswers.forEach(answer => {
 
         const questionAnswers = document.createElement("button");
 
