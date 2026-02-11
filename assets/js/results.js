@@ -15,10 +15,10 @@ const mottos = {
 
 
 const houseImages = {
-    Gryffindor: "/assets/images/gryffindor.jpg",
-    Hufflepuff: "/assets/images/hufflepuff.jpg",
-    Ravenclaw: "/assets/images/ravenclaw.jpg",
-    Slytherin: "/assets/images/slytherin.jpg",
+    Gryffindor: "assets/images/gryffindor.jpg",
+    Hufflepuff: "assets/images/hufflepuff.jpg",
+    Ravenclaw: "assets/images/ravenclaw.jpg",
+    Slytherin: "assets/images/slytherin.jpg",
 }
 
 // Function to display results
