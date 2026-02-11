@@ -3,6 +3,8 @@
 const result = document.getElementById("result")
 const motto = document.getElementById("house-motto");
 const winnerName = localStorage.getItem("winner");
+const houseBanners = document.getElementById("house-banner");
+
 
 const mottos = {
     Gryffindor: "Their daring, nerve and chivalry set Gryffindors apart.",
@@ -11,6 +13,13 @@ const mottos = {
     Slytherin: "Slytherin will help you on your way to greatness." 
 };
 
+
+const houseImages = {
+    Gryffindor: "/assets/images/gryffindor.jpg",
+    Hufflepuff: "/assets/images/hufflepuff.jpg",
+    Ravenclaw: "/assets/images/ravenclaw.jpg",
+    Slytherin: "/assets/images/slytherin.jpg",
+}
 
 // Function to display results
 
@@ -22,8 +31,14 @@ function displayWinner(result, mottos) {
 
     if (winnerName && mottos[winnerName]) {
         motto.innerHTML = mottos[winnerName];
+
+        houseBanners.src = houseImages[winnerName];
+        houseBanners.style.display = "block"; 
+        houseBanners.alt = winnerName + " banner";
+
     } else {
         motto.innerHTML = "The Sorting Hat is undecided. Please take the quiz!";
+        houseBanners.style.display = "none";
     }
 }
 
