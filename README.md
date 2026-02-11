@@ -34,7 +34,7 @@ User can take a quiz inculuding 10 questions and see which house he/she belongs 
 
 ### Gifs:
 
-[Loading gif](https://tenor.com/en-GB/view/load-loading-april-fools-gif-5435835)
+[Loading gif](hhttps://tenor.com/en-GB/view/spacehey-loading-screen-gif-5786507899478653941)
 
 ### Fonts:
 
