@@ -71,6 +71,15 @@ The project's responsiveness was thoroughly tested using Chrome Dev Tools, which
 
 ![HTML validator results](/docs/images/html-validator.jpg)
 
+[CSS validator](https://jigsaw.w3.org/css-validator/)
+
+- 0 warnings
+- 0 errors
+
+![CSS validator results](/docs/images/css-validator.jpg)
+
+
+
 ## Credits
 
 ### Images :
