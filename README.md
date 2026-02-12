@@ -22,7 +22,54 @@ User can take a quiz inculuding 10 questions and see which house he/she belongs 
 - [Git](https://git-scm.com/)
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [JavaScript](https://www.javascript.com/)
+- - [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en)
 
+## Testing
+
+### Devices used during testing :
+
+- Desktop PC
+- Laptop
+- Lenovo Tab M10 Plus
+- Iphone
+
+### Chrome Dev Tools :
+
+The project's responsiveness was thoroughly tested using Chrome Dev Tools, which allowed for precise debugging and optimisation. The Responsive Viewer browser extension was used to emulate the following devices :
+
+- Iphone SE
+- Iphone XR
+- Iphone 12 Pro
+- Iphone 14 Pro Max
+- Pixel 7
+- Pixel 2
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- Samsung Galaxy Note20
+- iPad Mini
+- iPad Air
+- iPad Pro
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Asus Zenbook Fold
+- Samsung Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
+- Fire HD 10
+- Pixelbook Go
+
+![Responsive viewer - part one](/docs/images/responsive-viewer-first.png)
+![Responsive viewer - part two](/docs/images/responsive-viewer-second.PNG)
+
+### Validation :
+
+[HTML validator](https://validator.w3.org/)
+
+- 0 errors
+- warnings
+
+![HTML validator results](/docs/images/html-validator.jpg)
 
 ## Credits
 
