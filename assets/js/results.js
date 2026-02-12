@@ -1,6 +1,6 @@
 // Declaring global variables
 
-const result = document.getElementById("result")
+const result = document.getElementById("result");
 const motto = document.getElementById("house-motto");
 const winnerName = localStorage.getItem("winner");
 const houseBanners = document.getElementById("house-banner");
@@ -19,7 +19,7 @@ const houseImages = {
     Hufflepuff: "assets/images/hufflepuff.jpg",
     Ravenclaw: "assets/images/ravenclaw.jpg",
     Slytherin: "assets/images/slytherin.jpg",
-}
+};
 
 // Function to display results
 

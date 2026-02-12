@@ -116,7 +116,7 @@ function askQuestion(quizData) {
 
     const currentQuestion = quizData[currentNumber];
     
-    question.innerHTML = currentQuestion.question
+    question.innerHTML = currentQuestion.question;
 
     answers.innerHTML = "";
 

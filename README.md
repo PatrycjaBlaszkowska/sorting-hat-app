@@ -71,6 +71,7 @@ The project's responsiveness was thoroughly tested using Chrome Dev Tools, which
 
 ![HTML validator results](/docs/images/html-validator.jpg)
 
+
 [CSS validator](https://jigsaw.w3.org/css-validator/)
 
 - 0 warnings
@@ -79,6 +80,12 @@ The project's responsiveness was thoroughly tested using Chrome Dev Tools, which
 ![CSS validator results](/docs/images/css-validator.jpg)
 
 
+[JS validator](https://jshint.com/)
+
+- 0 errors
+- 0 warnings
+
+![JS validator results](/docs/images/jshint.jpg)
 
 ## Credits
 
